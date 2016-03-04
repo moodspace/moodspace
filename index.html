@@ -8,6 +8,7 @@
 
   <!-- CSS  -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css" />
+  <link rel="stylesheet" href="./static/css/animate.min.css" type="text/css" />
   <link rel="stylesheet" href="./static/css/materialize.css" type="text/css" media="screen,projection" />
   <link rel="stylesheet" href="./static/css/style.css" type="text/css" media="screen,projection" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" type="text/css" />
@@ -67,7 +68,7 @@
             Now I am a junior undergrad majoring in Computer Science and in Information Science. I started working on the Student Assembly's Technology Committee, leading a subgroup that develops a better
             <a href="https://glassroom.xyz/">course management platform</a>. I have strong interest in full stack development and data-driven applications. A great fan of Linux OSs, I use
             <a href="http://orgsync.rso.cornell.edu/org/opensourcecornell">
-              free and open source software</a>.
+              FOSS</a>.
           </p>
         </div>
       </div>
@@ -96,15 +97,15 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">laptop</i></h2>
+            <h2 class="center light-blue-text"><i class="zmdi zmdi-desktop-windows"></i></h2>
             <h5 class="center">Software Engineering</h5>
-            <p class="light">C# and Java, plus some C++. For smaller projects, I use Ruby and Python. All of them are open-sourced. Mini-projects include a Spotify ad-blocker, a Spanish dictionary app, and a porting of 2048 written in C#.</p>
+            <p class="light">C# and Java, plus some C++. For smaller projects, I use Ruby and Python. All of them are open-sourced. Mini-projects include a Spotify ad-blocker, a Spanish dictionary app, and a 2048 CLI written in C#.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">cloud</i></h2>
+            <h2 class="center light-blue-text"><i class="zmdi zmdi-cloud-outline-alt"></i></h2>
             <h5 class="center">Full-stack Development</h5>
             <p class="light">Good ol' PHP in a traditional LAMP stack. In recent years, I have picked up full-stack Javascript that uses Node.js and MongoDB, and, React.js for frontend. I am also familiar with server deployment &amp; maintenance.</p>
           </div>
@@ -112,9 +113,9 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">smartphone</i></h2>
+            <h2 class="center light-blue-text"><i class="zmdi zmdi-smartphone"></i></h2>
             <h5 class="center">Mobile Apps</h5>
-            <p class="light">I design iOS apps in Swift and Android apps in Java. Nowadays, I am more focused on turning JS applications into native apps to create a seemless user experience. <a href="https://github.com/moodspace/MineSweeper">Get the code &gt;</a></p>
+            <p class="light">I design <a href="https://github.com/moodspace/MineSweeper">iOS apps</a> in Swift and <a href="https://github.com/CornelldotSpace/friendly-chainsaw">Android apps</a> in Java. Nowadays, I am more focused on turning JS applications into native apps to create a seemless user experience.</p>
           </div>
         </div>
 
@@ -135,6 +136,7 @@
     <div class="parallax"><img src="./static/img/background2.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
+  <div style="overflow: hidden;"><canvas id="c"></canvas></div>
 
   <div id="gallery" class="container">
     <div class="row"></div>
@@ -165,7 +167,7 @@
               <span class="card-title">MyBucks</span>
             </div>
             <div class="card-content">
-              <p>MyBucks is a file explorer for Windows, with a built-in archive manager and various enhancements.</p>
+              <p><a href="https://github.com/moodspace/mashed-potato">MyBucks</a> is a file explorer for Windows, with a built-in archive manager and various enhancements.</p>
             </div>
             <div class="card-action">
               <div class="chip">Utilities</div>
@@ -182,7 +184,7 @@
               <span class="card-title">Lyra</span>
             </div>
             <div class="card-content">
-              <p>Lyra is a plug-in for Spotify designed to automatically mute Spotify's ads, it has evolved into a skinned UI with lyrics display.</p>
+              <p><a href="https://github.com/moodspace/Lyra">Lyra</a> is a plug-in for Spotify designed to automatically mute Spotify's ads, it has evolved into a skinned UI with lyrics display.</p>
             </div>
             <div class="card-action">
               <div class="chip">C#</div>
@@ -196,13 +198,13 @@
 
       <div class="row">
         <div class="col s12 m3">
-          <div class="card">
+          <div id="karma" class="card">
             <div class="card-image">
               <img src="static/img/port4.png">
               <span class="card-title">Karma</span>
             </div>
             <div class="card-content">
-              <p>Karma is a web-based static file serving utility. It supports instant file search and preview of multiple file types. Wallpapers are changed daily thanks to Bing.</p>
+              <p><a href="https://github.com/moodspace/karma">Karma</a> is a web-based static file serving utility. It supports instant file search and preview of multiple file types. Wallpapers are changed daily thanks to Bing.</p>
             </div>
             <div class="card-action">
               <div class="chip">JavaScript</div>
@@ -214,13 +216,13 @@
         </div>
 
         <div class="col s12 m6">
-          <div class="card">
+          <div id="glassroom" class="card">
             <div class="card-image">
               <img src="static/img/port5.jpg">
               <span class="card-title">Glassroom</span>
             </div>
             <div class="card-content">
-              <p>Glassroom is the upcoming course management app for Cornell students. It is cross platform and tracks all parts of academic life, like enrollment, class schedule and assignments.</p>
+              <p><a href="https://github.com/CornelldotSpace">Glassroom</a> is the upcoming course management app for Cornell students. It is cross platform and tracks all parts of academic life, like enrollment, class schedule and assignments.</p>
             </div>
             <div class="card-action">
               <div class="chip">Full stack</div>
@@ -243,7 +245,7 @@
             </div>
             <div class="card-reveal">
               <span class="card-title">Profile-picture<i class="material-icons right">close</i></span>
-              <p>Profile-picture generates a default avatar with custom colors and initials. It uses a combination of client (UI) and server (API) side canvases to render png images.</p>
+              <p><a href="https://github.com/moodspace/profile-picture">Profile-picture</a> generates a default avatar with custom colors and initials. It uses a combination of client (UI) and server (API) side canvases to render png images.</p>
               <div class="chip">Javascript</div>
               <div class="chip">HTML/CSS</div>
               <div class="chip">Node.js</div>
@@ -269,7 +271,7 @@
             <ul>
               <li>
                 <a class="btn-floating grey darken-3" href="https://github.com/moodspace">
-                  <i class="zmdi zmdi-github"></i>Github
+                  <i class="zmdi zmdi-github">Github</i>
                 </a>
               </li>
               <li>
@@ -296,44 +298,66 @@
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
+  <footer class="page-footer blue-grey darken-4">
+
+    <div style="background-image: url('./static/img/stardust.png');">
       <div class="container">
-        <div class="row center">
-          <div class="section">
-            <h4 class="header col s12 light">Feel free to reach out!</h4>
-            <!--   skills row 1   -->
-            <div class="row">
-              <div class="col s12 m6">
-                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-76.50715827941893%2C42.426054159792926%2C-76.45051002502441%2C42.45582431629294&amp;layer=hot" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/#map=15/42.4409/-76.4788&amp;layers=H">View Larger Map</a></small>
-              </div>
-
-              <div class="col s12 m6 left-align">
-                <div class="cognito">
-                </div>
-              </div>
-
+        <div class="section">
+          <h4 class="center white-text header col s12 light">Feel free to reach out!</h4>
+          <!--   skills row 1   -->
+          <div class="row">
+            <div class="col s12 m6 center" style="overflow: hidden;">
+              <iframe style="position: relative; top: 20px;" width="400" height="270" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-76.50715827941893%2C42.426054159792926%2C-76.45051002502441%2C42.45582431629294&amp;layer=hot" style="border: 1px solid black"></iframe><br/><small><a style="position: relative; top: 30px;" href="https://www.openstreetmap.org/#map=15/42.4409/-76.4788&amp;layers=H">View Larger Map</a></small>
             </div>
 
+            <div class="col s12 m6">
+              <form class="col s12 white-text" action="https://moodspace.xyz/contact-submit" method="POST">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input name="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input name="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input name="phone" type="tel" class="validate">
+                    <label for="phone">Phone</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input name="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea name="response" class="materialize-textarea"></textarea>
+                    <label for="response">Comments or Questions</label>
+                  </div>
+                </div>
+                <button class="btn waves-effect waves-light light-blue darken-1" type="submit">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="./static/img/stardust.png" alt="Unsplashed background img 3"></div>
-  </div>
 
-  <footer class="page-footer blue-grey darken-4">
-    <div class="footer-copyright">
+    <div class="footer-copyright" style="height: 40px; line-height: 40px;">
       <div class="container">
-        Copyright 2016 <a class="blue-text text-lighten-3" href="https://moodspace.xyz">MoodSpace</a>, handcrafted with love in NY.
+        Copyright 2016 <a class="blue-text text-lighten-3" href="https://moodspace.xyz">MoodSpace</a>, handcrafted with love in <span style="font-family: StateFaceRegular;">h</span>. Proudly hosted in <span class="map-eur"></span>.
+        <a href="https://www.sharelatex.com?r=698d0637&rm=d&rs=b">~ ShareLaTeX</a>
       </div>
     </div>
   </footer>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://services.cognitoforms.com/s/Tg0jTVk4d0uGmGaekYf2uQ"></script>
-  <script src="./static/js/wNumb.min.js"></script>
-  <script src="./static/js/nouislider.min.js"></script>
+  <script src="./static/js/randomColor.js"></script>
   <script src="./static/js/materialize.js"></script>
   <script src="./static/js/init.js"></script>
   <script src="./static/js/main.js"></script>
